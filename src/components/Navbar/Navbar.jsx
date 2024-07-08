@@ -11,14 +11,22 @@ export const Navbar = () => {
   return (
     <HeaderContainer>
       <Logo>
-        <img src="/img/phone-bow-front.png" alt="" />
+        <a href="">
+          <img src="/img/phone-bow-front.png" alt="" />
+        </a>
       </Logo>
       <NavbarCotainer>
         <NavbarLinks>
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>LOGIN</li>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li>
+              <a href="#">LOGIN</a>
+            </li>
           </ul>
         </NavbarLinks>
       </NavbarCotainer>

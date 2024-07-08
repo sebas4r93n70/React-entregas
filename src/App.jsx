@@ -1,11 +1,14 @@
-import { Footer } from "./components/Footer/Footer";
-import { Navbar } from "./components/Navbar/Navbar";
+import { Hero } from "./components/Hero/Hero";
+import { Layout } from "./components/Layout/Layout";
+import { Products } from "./components/Products/Products";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Footer />
+      <Layout>
+        <Hero />
+        <Products />
+      </Layout>
     </>
   );
 }

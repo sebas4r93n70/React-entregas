@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
   color: white;
   font-size: 1rem;
   text-align: center;
+  gap: 20px;
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;

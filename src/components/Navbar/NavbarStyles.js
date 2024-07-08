@@ -17,6 +17,12 @@ export const Logo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   img {
     height: 90%;
   }
@@ -41,11 +47,22 @@ export const NavbarLinks = styled.ul`
     align-items: center;
     gap: 20px;
   }
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+  a:hover {
+    color: #5cbf2a;
+  }
 `;
 export const MenuContainer = styled.div`
   color: gray;
-  font-size: 2rem;
+  font-size: 2.2rem;
   display: none;
+  cursor: pointer;
+  &:hover {
+    color: #5cbf2a;
+  }
   @media (max-width: 768px) {
     display: flex;
   }
