@@ -6,6 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: black;
 `;
 export const HeroTitleContainer = styled.div`
   display: flex;
@@ -37,6 +38,7 @@ export const HeroTitleContainer = styled.div`
   }
   @media (max-width: 768px) {
     align-items: center;
+    top: 150px;
     left: calc((100% - 557px) / 2);
     h1 {
       font-size: 2.5rem;

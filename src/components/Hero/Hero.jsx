@@ -34,7 +34,7 @@ export const Hero = () => {
         slidesPerView={1}
         effect="fade"
         autoplay={{
-          delay: 3500,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         navigation

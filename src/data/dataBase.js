@@ -63,7 +63,7 @@ export const dataProducts = [
     },
     precio: 999,
     imagen:
-      "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/h/u/huawei-p50-pro-black-1_1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYPNB5hLgSAGbCbzKKsSqTJR_xIICcxZWhqA&s",
   },
   {
     id: 5,

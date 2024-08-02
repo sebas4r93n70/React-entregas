@@ -1,14 +1,8 @@
-import { Hero } from "./components/Hero/Hero";
-import { Layout } from "./components/Layout/Layout";
-import { Products } from "./components/Products/Products";
-
+import Routes from "./routes/Routes";
 function App() {
   return (
     <>
-      <Layout>
-        <Hero />
-        <Products />
-      </Layout>
+      <Routes />
     </>
   );
 }

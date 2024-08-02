@@ -1,4 +1,4 @@
-import { Button } from "../UI/Button/Button";
+import { Button } from "../../components/UI/Button/Button";
 import { CardButton, CardContainer, CardImg, CardInfo } from "./ProductsStyles";
 // {
 //     id: 1,

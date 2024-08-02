@@ -4,33 +4,41 @@ import {
   Logo,
   MenuContainer,
   NavbarCotainer,
+  NavbarLink,
   NavbarLinks,
 } from "./NavbarStyles";
+import { useContext } from "react";
+import { MyContext } from "../../context/MyContext";
 
 export const Navbar = () => {
+  const { isOpen, handledMenu } = useContext(MyContext);
   return (
     <HeaderContainer>
       <Logo>
-        <a href="">
+        {/* <a href="">
           <img src="/img/phone-bow-front.png" alt="" />
-        </a>
+        </a> */}
+        <NavbarLink to={"/"}>
+          <img src="/img/phone-bow-front.png" alt="" />
+        </NavbarLink>
       </Logo>
-      <NavbarCotainer>
+      <NavbarCotainer $toggle={isOpen}>
         <NavbarLinks>
-          <ul>
-            <li>
-              <a href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#">LOGIN</a>
-            </li>
-          </ul>
+          <NavbarLink onClick={handledMenu} to={"/"}>
+            HOME
+          </NavbarLink>
+          <NavbarLink onClick={handledMenu} to={"/productos"}>
+            EQUIPOS
+          </NavbarLink>
+          <NavbarLink onClick={handledMenu} to={"/about"}>
+            ABOUT
+          </NavbarLink>
+          <NavbarLink onClick={handledMenu} to={"/contacto"}>
+            CONTACTO
+          </NavbarLink>
         </NavbarLinks>
       </NavbarCotainer>
-      <MenuContainer>
+      <MenuContainer onClick={handledMenu}>
         <TiThMenu />
       </MenuContainer>
     </HeaderContainer>
