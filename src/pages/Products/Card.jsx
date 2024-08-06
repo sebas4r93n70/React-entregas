@@ -1,4 +1,4 @@
-import { Button } from "../../components/UI/Button/Button";
+/* eslint-disable react/prop-types */
 import { CardButton, CardContainer, CardImg, CardInfo } from "./ProductsStyles";
 // {
 //     id: 1,
@@ -31,9 +31,7 @@ export const Card = (props) => {
         <span>{modelo}</span>
         <span>${precio}</span>
       </CardInfo>
-      <CardButton>
-        <Button>ver</Button>
-      </CardButton>
+      <CardButton>{props.children}</CardButton>
     </CardContainer>
   );
 };

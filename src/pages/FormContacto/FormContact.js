@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FormContactContainer = styled.div`
+export const FormContactContainer = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,12 +8,17 @@ export const FormContactContainer = styled.div`
   max-width: 1000px;
   height: 100vh;
   gap: 1rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
   input {
-    width: 310px;
+    width: 300px;
     height: 1.2rem;
   }
   textarea {
-    width: 310px;
+    width: 300px;
     height: 300px;
+  }
+  @media (max-width: 768px) {
+    padding: 1rem 0.5rem;
   }
 `;

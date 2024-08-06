@@ -1,3 +1,4 @@
+import { ButtonSimple } from "../../components/UI/Button/ButtonSimple";
 import { dataProducts } from "../../data/dataBase";
 import { Card } from "./Card";
 import {
@@ -14,7 +15,9 @@ export const Products = () => {
       </ProductsTitleContainer>
       <ProductsCardsContainer>
         {dataProducts.map((product) => (
-          <Card key={product.id} {...product} />
+          <Card key={product.id} {...product}>
+            <ButtonSimple>VER</ButtonSimple>
+          </Card>
         ))}
       </ProductsCardsContainer>
     </ProductsContainer>

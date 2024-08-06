@@ -11,6 +11,7 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+import { AnchorLink } from "../UI/AnchorLink/AnchorLink";
 
 export const Footer = () => {
   return (
@@ -27,21 +28,21 @@ export const Footer = () => {
       </FooterInfoContainer>
       <FooterLinksPageContainer>
         <h4>ENLACES</h4>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">LOGIN</a>
+        <AnchorLink to={"/"}>HOME</AnchorLink>
+
+        <AnchorLink to={"/about"}>ABOUT</AnchorLink>
       </FooterLinksPageContainer>
       <FooterSocialLinksContainer>
         <h4>REDES</h4>
-        <a href="#" title="Facebook">
+        <AnchorLink to={"/"}>
           <FaFacebookSquare />
-        </a>
-        <a href="#">
+        </AnchorLink>
+        <AnchorLink to={"/"}>
           <FaInstagramSquare />
-        </a>
-        <a href="#">
+        </AnchorLink>
+        <AnchorLink to={"/"}>
           <FaSquareXTwitter />
-        </a>
+        </AnchorLink>
       </FooterSocialLinksContainer>
     </FooterContainer>
   );

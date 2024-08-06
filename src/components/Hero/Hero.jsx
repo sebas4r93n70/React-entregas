@@ -15,7 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
-import { Button } from "../UI/Button/Button";
+import { ButtonSimple } from "../UI/Button/ButtonSimple";
 
 export const Hero = () => {
   return (
@@ -67,7 +67,7 @@ export const Hero = () => {
       <HeroTitleContainer>
         <h1>ALMACEN DE CELUS</h1>
         <span>En un lugar todo lo que necesitas para tu celular.</span>
-        <Button>ver</Button>
+        <ButtonSimple>ver</ButtonSimple>
       </HeroTitleContainer>
     </HeroContainer>
   );

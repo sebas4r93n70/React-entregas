@@ -40,10 +40,10 @@ export const FooterLinksPageContainer = styled.div`
   h4 {
     font-size: 1.2rem;
   }
-  a {
+  /* a {
     text-decoration: none;
-    color: white;
-  }
+    color: ${(props) => props.color || "white"};
+  } */
 `;
 export const FooterSocialLinksContainer = styled(FooterLinksPageContainer)`
   font-size: 2rem;
